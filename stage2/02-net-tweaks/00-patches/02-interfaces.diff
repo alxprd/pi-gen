@@ -1,0 +1,16 @@
+Index: jessie-stage2/rootfs/etc/network/interfaces
+===================================================================
+--- jessie-stage2.orig/rootfs/etc/network/interfaces
++++ jessie-stage2/rootfs/etc/network/interfaces
+@@ -5,3 +5,11 @@
+ 
+ # Include files from /etc/network/interfaces.d:
+ source-directory /etc/network/interfaces.d
++
++allow-hotplug wlan0  
++iface wlan0 inet static  
++    address 172.24.1.1
++    netmask 255.255.255.0
++    network 172.24.1.0
++    broadcast 172.24.1.255
++#    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf

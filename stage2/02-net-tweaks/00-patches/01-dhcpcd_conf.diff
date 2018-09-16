@@ -1,0 +1,9 @@
+Index: jessie-stage2/rootfs/etc/dhcpcd.conf
+===================================================================
+--- jessie-stage2.orig/rootfs/etc/dhcpcd.conf
++++ jessie-stage2/rootfs/etc/dhcpcd.conf
+@@ -55,3 +55,4 @@
+ #interface eth0
+ #fallback static_eth0
+ 
++denyinterfaces wlan0
